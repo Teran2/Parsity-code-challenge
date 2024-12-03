@@ -29,3 +29,13 @@ const findFrequency = function(array) {
   return { most: mostFrequentItem, least: leastFrequentItem };
 }
 
+const isPalindrome = function (str) {
+  const word = String(str).toLowerCase();
+  const reversedWord = word.split('').reverse().join('');
+
+  if (word === reversedWord) {
+    return true;
+  } else {
+    return false;
+  }
+};
