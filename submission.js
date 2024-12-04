@@ -39,3 +39,17 @@ const isPalindrome = function (str) {
     return false;
   }
 };
+
+const largestPair = function (array) {
+    const products = [];
+
+    for (let i = 0; i < array.length; i++) {
+        const product = array[i] * array[i + 1];
+
+        if (product) {
+            products.push(product);
+        }
+    }
+
+    return Math.max(...products);
+}
