@@ -53,3 +53,10 @@ const largestPair = function (array) {
 
     return Math.max(...products);
 }
+
+const removeParenth = function(str) {
+  const string = str.replace(/\([^)]*\)/g, '');
+
+  return string;
+  };
+
